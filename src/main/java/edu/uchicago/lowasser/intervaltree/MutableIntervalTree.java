@@ -7,7 +7,6 @@ import com.google.common.base.Objects;
 import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.BoundType;
 import com.google.common.collect.ComparisonChain;
-import com.google.common.collect.Iterators;
 import com.google.common.collect.Ordering;
 import com.google.common.collect.Range;
 import com.google.common.collect.Ranges;
