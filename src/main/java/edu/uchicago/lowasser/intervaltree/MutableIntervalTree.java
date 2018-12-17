@@ -14,6 +14,7 @@ import com.google.common.collect.Ranges;
 
 import java.util.AbstractSet;
 import java.util.ArrayDeque;
+import java.util.Collections;
 import java.util.ConcurrentModificationException;
 import java.util.Deque;
 import java.util.Iterator;
@@ -250,7 +251,7 @@ public final class MutableIntervalTree<C extends Comparable<C>> extends Abstract
       @Override
       public Iterator<Range<C>> iterator() {
         if (root == null) {
-          return Iterators.emptyIterator();
+          return Collections.emptyIterator();
         }
         final Deque<Node<C>> deque = new ArrayDeque<Node<C>>();
         deque.push(root);
@@ -287,7 +288,7 @@ public final class MutableIntervalTree<C extends Comparable<C>> extends Abstract
       @Override
       public Iterator<Range<C>> iterator() {
         if (root == null) {
-          return Iterators.emptyIterator();
+          return Collections.emptyIterator();
         }
         final Deque<Node<C>> deque = new ArrayDeque<Node<C>>();
         deque.push(root);
@@ -322,7 +323,7 @@ public final class MutableIntervalTree<C extends Comparable<C>> extends Abstract
       @Override
       public Iterator<Range<C>> iterator() {
         if (root == null) {
-          return Iterators.emptyIterator();
+          return Collections.emptyIterator();
         }
         final Deque<Node<C>> deque = new ArrayDeque<Node<C>>();
         deque.push(root);
